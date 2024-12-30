@@ -11,12 +11,12 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             <ul className="sidebar-menu">
                 <li><button><Link to="/userDashboard">Home</Link></button></li>
                 <li><button><Link to="/profile">Your Coding Profile</Link></button></li>
-                <li><button>Active Courses</button></li>
-                <li><button>Community Docs</button></li>
+                <li><button><Link to="/wait">Active Courses</Link></button></li>
+                <li><button><Link to="/wait">Community Docs</Link></button></li>
                 <li><button><Link to="/openDiscussion">Open Discussion</Link></button></li>
-                <li><button>All Courses</button></li>
-                <li><button>Blogs</button></li>
-                <li><button>Settings</button></li>
+                <li><button><Link to="/wait">All Course</Link></button></li>
+                <li><button><Link to="/wait">Blogs</Link></button></li>
+                <li><button><Link to="/wait">Settings</Link></button></li>
             </ul>
         </div>
     );

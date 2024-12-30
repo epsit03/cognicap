@@ -5,6 +5,7 @@ import ProtectedRoute from '../components/ProtectedRoute';
 import CreateUserFromAdmin from '../pages/CreateUserFromAdmin';
 import UserManagement from '../components/UserManagement';
 import OpenDiscussion from '../components/Open Discussion';
+import Wait from '../waiting/Wait'
 
 const AppRoutes = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -73,7 +74,14 @@ const AppRoutes = () => {
         </ProtectedRoute>
     }
 />
-   
+<Route
+        path="/wait"
+        element={
+          <ProtectedRoute isAuthenticated={isAuthenticated}>
+            <Wait />
+          </ProtectedRoute>
+        }
+      />
         </Routes>
     );
 };

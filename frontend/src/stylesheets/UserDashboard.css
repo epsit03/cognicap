@@ -157,7 +157,7 @@
     text-align: center;
     font-size: 14px; /* Slightly larger for readability */
     color: rgba(255, 255, 255, 0.9);
-    animation: slideIn 0.7s ease;
+    /* animation: slideIn 0.7s ease; */
 }
 
 .milestone-flag span {
